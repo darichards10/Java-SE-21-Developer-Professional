@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+<<<<<<< HEAD
 	<classpathentry kind="src" path="src"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
 		<attributes>
@@ -7,4 +8,9 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
+=======
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="SE21/src"/>
+	<classpathentry kind="output" path="SE21/bin"/>
+>>>>>>> fd67abe4c885af47c3feb1e4a8062213bc890584
 </classpath>
