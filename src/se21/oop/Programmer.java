@@ -23,8 +23,9 @@ public record Programmer(String name, Integer age) implements CanRun { // EXAM: 
 //	}
 
 	public Programmer { // EXAM: compact constructor — no parameter list; validates/transforms components; compiler inserts 'this.name=name; this.age=age;' at the end automatically
-		if (age < 0)
+		if (age < 0) {
 			throw new IllegalArgumentException();
+		}
 	}
 
 	public Programmer(String firstName, String lastName, Integer age) { // EXAM: custom constructor — must call the canonical constructor via this() as the first statement

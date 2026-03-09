@@ -156,11 +156,13 @@ public class StreamsExamples {
 	}
 
 	public static Optional<Double> average(int... scores) { // EXAM: returning Optional<T> instead of null is the preferred modern pattern
-		if (scores.length == 0)
+		if (scores.length == 0) {
 			return Optional.empty(); // EXAM: Optional.empty() — represents absence of a value
+		}
 		int sum = 0;
-		for (int score : scores)
+		for (int score : scores) {
 			sum += score;
+		}
 		return Optional.of((double) sum / scores.length); // EXAM: Optional.of() wraps a non-null result; use ofNullable() if result could be null
 	}
 }

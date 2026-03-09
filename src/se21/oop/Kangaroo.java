@@ -1,7 +1,8 @@
 package se21.oop;
 
-import java.util.List;
 import static java.util.Arrays.asList;
+
+import java.util.List;
 
 /**
  * EXAM TOPIC: Java Object-Oriented Approach / Nested Classes (Advanced)

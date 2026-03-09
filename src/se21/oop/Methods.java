@@ -34,7 +34,7 @@ public class Methods {
 				""".formatted(num); // EXAM: text block (Java 15+) — triple quotes; leading whitespace stripped by common indent
 		System.out.println(txt);
 	}
-	
+
 	public static void main(String[] args) {
 		zooAnimalCheckup(true);
 
@@ -66,10 +66,11 @@ public class Methods {
 
 	static void zooAnimalCheckup(boolean isWeekend) {
 		final int rest; // EXAM: blank final local — not yet assigned; must be assigned before use
-		if (isWeekend)
+		if (isWeekend) {
 			rest = 5;
-		else
+		} else {
 			rest = 20;
+		}
 		System.out.println(rest); // EXAM: guaranteed assigned on all paths; valid to read here
 	}
 

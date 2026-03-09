@@ -1,8 +1,8 @@
 package se21.functional;
 
+import java.util.*;
 import java.util.function.*;
 import java.util.stream.*;
-import java.util.*;
 
 /**
  * SELF-TEST: Working with Streams and Lambda Expressions

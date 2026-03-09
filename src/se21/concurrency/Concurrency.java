@@ -1,7 +1,6 @@
 package se21.concurrency;
 
 import java.util.List;
-import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
@@ -29,7 +28,7 @@ public class Concurrency {
 		printListWithParallelStream();
 		printListWithStream();
 	}
-	
+
 	public static void printListWithParallelStream() {
 		List<String> list = List.of("A", "B", "C", "D");
 		// EXAM: parallelStream() may execute in any order; output order is non-deterministic

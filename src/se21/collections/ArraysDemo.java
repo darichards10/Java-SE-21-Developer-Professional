@@ -16,7 +16,7 @@ import java.util.Arrays;
  * - Multi-dimensional arrays: int[][] — array of arrays; inner arrays can have different lengths
  */
 public class ArraysDemo {
-	
+
 	public static void main(String[] args) {
 		equality();
 		addingToNew();
@@ -35,10 +35,12 @@ public class ArraysDemo {
 
 	static void addingToNew() {
 		var numbers = new int[10];
-		for (int i = 0; i < numbers.length; i++)
+		for (int i = 0; i < numbers.length; i++) {
 			numbers[i] = i + 5; // EXAM: array elements accessed by index; length is fixed at creation
-		for (int n : numbers)
+		}
+		for (int n : numbers) {
 			System.out.println(n);
+		}
 	}
 
 	static void sortAndSearch() {

@@ -13,21 +13,25 @@ package se21.oop;
  */
 public enum SeasonWithTimes {
 	WINTER { // EXAM: constant-specific class body — WINTER is an anonymous subclass of SeasonWithTimes; required because getHours() is abstract
+		@Override
 		public String getHours() {
 			return "10am-3pm";
 		}
 	},
 	SPRING { // EXAM: every constant must override the abstract method; omitting any one causes a compile error
+		@Override
 		public String getHours() {
 			return "9am-5pm";
 		}
 	},
 	SUMMER {
+		@Override
 		public String getHours() {
 			return "9am-7pm";
 		}
 	},
 	FALL {
+		@Override
 		public String getHours() {
 			return "9am-5pm";
 		}

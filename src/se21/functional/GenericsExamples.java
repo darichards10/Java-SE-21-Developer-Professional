@@ -51,12 +51,13 @@ public class GenericsExamples {
 
 	public static <T> Container<T> ship(T t) { // EXAM: generic method returning a parameterized type Container<T>
 		System.out.println("Shipping " + t);
-		return new Container<T>(); // EXAM: type parameter T passed through to Container constructor
+		return new Container<>(); // EXAM: type parameter T passed through to Container constructor
 	}
 
 	public static void printList(List<?> list) { // EXAM: unbounded wildcard parameter; accepts List of any type; elements read as Object
-		for (Object x : list)
+		for (Object x : list) {
 			System.out.println(x);
+		}
 	}
 
 	<T> T first(List<? extends T> list) { // EXAM: upper-bounded wildcard with type param T; PECS Producer Extends

@@ -1,7 +1,7 @@
 package se21.localization;
 
-import java.util.Locale;
 import java.text.NumberFormat;
+import java.util.Locale;
 
 /**
  * SELF-TEST: Implementing Localization

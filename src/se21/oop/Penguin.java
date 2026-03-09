@@ -14,6 +14,6 @@ public class Penguin {
 	}
 
 	public void printStaticInfor() {
-		System.out.println(this.getStaticHeight()); // EXAM: static method called via instance reference — resolved at compile time to Penguin.getStaticHeight(); always prints 3 (not polymorphic)
+		System.out.println(Penguin.getStaticHeight()); // EXAM: static method called via instance reference — resolved at compile time to Penguin.getStaticHeight(); always prints 3 (not polymorphic)
 	}
 }

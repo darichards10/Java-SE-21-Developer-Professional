@@ -15,8 +15,9 @@ package se21.functional;
 public record ContainerRecord<T>(T contents) implements Removable { // EXAM: generic record; T applied to record component; Removable used raw (no <T>) — causes unchecked warning
 
 	public T contents() { // EXAM: compact accessor override; adds null-check guard — records allow this pattern
-		if (contents == null)
+		if (contents == null) {
 			throw new IllegalStateException(); // EXAM: overriding auto-generated accessor to enforce invariants
+		}
 		return contents;
 	}
 

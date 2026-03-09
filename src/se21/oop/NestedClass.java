@@ -18,6 +18,7 @@ public class NestedClass {
 	private String text = "private top level string";
 	int x = 7;
 	AbstractClass anon = new AbstractClass() { // EXAM: anonymous class extending AbstractClass — no class name, declared and instantiated inline
+		@Override
 		int getVal() { return 10;}
 	};
 
@@ -47,7 +48,7 @@ public class NestedClass {
 
 	//@TODO
 	public static void main(String[] args) {
-		
+
 	}
 
 	public void createLocalClass() {

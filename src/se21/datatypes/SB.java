@@ -14,13 +14,13 @@ package se21.datatypes;
  * - Common StringBuilder methods: substring(), indexOf(), length(), charAt()
  */
 public class SB {
-	
+
 	public static void main(String[] args) {
 		objectExample();
 		commonMethods();
 		compilationEquality();
 	}
-	
+
 	public static void objectExample() {
 		StringBuilder a = new StringBuilder("abc");
 		StringBuilder b = a.append("de"); // EXAM: append() returns the same StringBuilder (this); a and b point to the same object

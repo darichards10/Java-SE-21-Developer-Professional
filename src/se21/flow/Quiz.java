@@ -88,7 +88,9 @@ public class Quiz {
 		System.out.print("Q4: ");
 		OUTER: for (int r = 0; r < 3; r++) {
 			for (int j = 0; j < 3; j++) {
-				if (j == 1) continue OUTER; // skip to next outer iteration
+				if (j == 1) {
+					continue OUTER; // skip to next outer iteration
+				}
 				System.out.print(r + "" + j + " ");
 			}
 		}
@@ -99,8 +101,11 @@ public class Quiz {
 
 		// Q6
 		Number n = 7;
-		if (n instanceof Integer val && val > 5) System.out.println("Q6: big int");
-		else System.out.println("Q6: other");
+		if (n instanceof Integer val && val > 5) {
+			System.out.println("Q6: big int");
+		} else {
+			System.out.println("Q6: other");
+		}
 
 		// Q7
 		int x = 1;
