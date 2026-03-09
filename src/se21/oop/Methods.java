@@ -34,6 +34,21 @@ public class Methods {
 				""".formatted(num); // EXAM: text block (Java 15+) — triple quotes; leading whitespace stripped by common indent
 		System.out.println(txt);
 	}
+	
+	public static void main(String[] args) {
+		zooAnimalCheckup(true);
+
+		walk(1, new int[] { 1, 2, 3 });
+		walk(4, 5, 6);
+		walk(7);
+		walk(1, new int[] { 1, 2, 3 });
+
+		System.out.println(glide("a"));
+		System.out.println(glide("a", "b"));
+		System.out.println(glide("a", "b", "c"));
+
+		new Methods();
+	}
 
 	public void bike1() {}
 

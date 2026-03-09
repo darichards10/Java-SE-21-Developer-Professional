@@ -16,8 +16,13 @@ import java.util.Arrays;
  * - Multi-dimensional arrays: int[][] — array of arrays; inner arrays can have different lengths
  */
 public class ArraysDemo {
+	
+	public static void main(String[] args) {
+		equality();
+		addingToNew();
+	}
 
-	static void equality() {
+	public static void equality() {
 		String[] bugs = { "cricket", "beetle", "ladybug" };
 		String[] alias = bugs;                               // EXAM: alias and bugs point to same array object
 		String[] anotherArray = { "cricket", "beetle", "ladybug" };

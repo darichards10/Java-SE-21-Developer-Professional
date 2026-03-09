@@ -29,7 +29,7 @@ public class Decisions {
 			System.out.println("< " + number);
 	}
 
-	static void compareIntegers(Number number) {
+	public static void compareIntegers(Number number) {
 		if (number instanceof Integer) {
 			Integer data = (Integer) number; // EXAM: old-style cast after instanceof check
 			System.out.println(data.compareTo(5));
@@ -146,7 +146,7 @@ public class Decisions {
 		});
 	}
 
-	static void doWhile() {
+	public static void doWhile() {
 		int lizard = 0;
 		do {
 			lizard++; // EXAM: do-while executes body BEFORE checking condition; lizard is always at least 1
@@ -187,7 +187,7 @@ public class Decisions {
 		}
 	}
 
-	static void sortStringList() {
+	public static void sortStringList() {
 		List<String> words = new ArrayList<>(List.of("apple", "Banana", "Orange", "apricot"));
 		Collections.sort(words, Comparator.comparing(String::length));
 		System.out.println(words);

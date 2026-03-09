@@ -19,7 +19,7 @@ import java.time.format.DateTimeFormatter;
  */
 public class DateTimeAPI {
 
-	static void examples() {
+	public static void examples() {
 		System.out.println(LocalDate.now());
 		System.out.println(LocalTime.now());
 		System.out.println(LocalDateTime.now());

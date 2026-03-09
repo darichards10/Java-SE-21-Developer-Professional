@@ -45,6 +45,11 @@ public class NestedClass {
 		anon.printSomething();
 	}
 
+	//@TODO
+	public static void main(String[] args) {
+		
+	}
+
 	public void createLocalClass() {
 		// EXAM: local class — declared inside a method body; only accessible within that method
 		class LocalClass {

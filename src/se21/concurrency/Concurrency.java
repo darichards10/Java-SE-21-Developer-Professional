@@ -25,6 +25,11 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 public class Concurrency {
 
+	public static void main(String[] args) {
+		printListWithParallelStream();
+		printListWithStream();
+	}
+	
 	public static void printListWithParallelStream() {
 		List<String> list = List.of("A", "B", "C", "D");
 		// EXAM: parallelStream() may execute in any order; output order is non-deterministic
